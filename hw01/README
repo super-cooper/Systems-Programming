@@ -1,0 +1,14 @@
+Name: Adam Cooper
+
+In this dir:
+    hello.c   -- Playing with printf statements
+    rot128.c  -- Takes a message and encrypts it using rot128 or rotn if given a parameter
+    diamond.c -- Draws a diamond out of '*' characters based on a number input by a user. If the number is negative, the diamond will be inverted.
+
+Issues:
+    Had a few warnings for print statements, but it turned out I was taking 
+the assignment too literally. Fixed those quickly.
+    Also had issues with declaring functions, which has to be done procedurally unlike Java. Fixed that as well.
+
+Honor Code:
+    I have adhered to the honor code in this assignment

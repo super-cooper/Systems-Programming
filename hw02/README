@@ -1,0 +1,40 @@
+Name: Adam Cooper, Helen Stern
+
+Programs: testurl.sh tests websites to see if they're up
+	  backup.sh makes backups of files in a new directory, keeps references to multiple backup directories as symlinks
+	  diskhog.sh tells the 5 highest disk-space hogging files or directories
+	  linecount.sh counts total number of lines in a given file based on a regex pattern
+	  gradeit.sh assigns failing grades to hw01
+
+Time: Too much for all of them we're sorry
+
+Bugs: gradeit.sh basically doesn't work because parsing outputs is hard and we couldn't get either of the rot128 programs to work. There's also an executable file with a really long name and rm won't let us get rid of it so just ignore it kthx
+
+Design Decisions: no
+	  
+
+
+Part 6:
+
+1. grep -c "Male" adult.data: 21790
+2. grep -c "<=50K" adult.data: 24720
+   grep -c ">50K" adult.data: 7841
+   Note: This was the last column. Seemed a little easy but we decided not to question it
+3. cut -d',' -f9 adult.data | sort | uniq -c:
+    311   Amer-Indian-Eskimo
+    1039  Asian-Pac-Islander
+    3124  Black
+    271   Other
+    27816 White
+4. cut -d',' -f9,10 adult.data | sort | uniq -c | sort -n -r
+    19174  White, Male
+     8642  White, Female
+     1569  Black, Male
+     1555  Black, Female
+      693  Asian-Pac-Islander, Male
+      346  Asian-Pac-Islander, Female
+      192  Amer-Indian-Eskimo, Male
+      162  Other, Male
+      119  Amer-Indian-Eskimo, Female
+      109  Other, Female
+

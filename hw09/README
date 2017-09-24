@@ -1,0 +1,47 @@
+Authors: Adam Cooper and Helen Stern
+
+
+
+
+Completed parts:
+looping
+single-word commands
+all built-in commands
+ignoring multiple spaces (thanks, strtok)
+multi-token commands
+SIGINT trapping
+background processes
+zombie killing (unfortunately not as cool as it sounds)
+getenv
+setenv, although it doesn't work but never returns an error
+
+We took a look at pipe and redirection, but we're extremely burnt out, and it's 10 PM
+on Sunday. We don't think we'll be able to get it done and we don't want to break the
+parts of our shell that currently work VERY well. We're very sorry to disappoint you.
+
+
+
+
+Bugs:
+Sometimes the threads get a little criss-crossy and the directory display is 
+printed too early, and the input prompt looks empty. This doesn't affect function in 
+any way, but it looks unfortunately ugly
+
+
+
+
+Design decisions:
+We have our prompt display like the actual bash shell. $HOME is replaced with '~', and 
+if you cd to $HOME's parents, it will display the full working directory. Extra Credit? ;)
+
+We also chose to track background processes using an array of pid_t's, so we can kill them
+manually.
+
+
+
+We affirm that we have adhered to the honor code in this assignment.
+
+
+
+Thank you for a great semester, Professor Hoyle. We really enjoyed your class, and this last
+assignment was especially fun. Have a great summer!

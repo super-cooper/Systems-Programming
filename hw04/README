@@ -1,0 +1,18 @@
+Names: Adam Cooper and Helen Stern
+
+Programs: 
+encode_bits reads in characters one at a time and prints them in binary
+decode_bits reads in binary and prints it out as the char representation
+tobinary reads in a number in base 2, 8, 10, 16 and prints it as binary
+todecimal reads in a number in base 2, 8, 10, 16 and prints it as base 10
+tooctal reads in a number in base 2, 8, 10, 16 and prints it as base 8
+tohex reads in a number in base 2, 8, 10, 16 and prints it as base 16
+
+getnum uses switch statements to check for valid inputs and then the default is to return -1, which then sets a global error variable to "true" which can be read externally
+
+No more compilation problems or warnings
+
+We spent way too much time on this and we're burnt out. 
+We'd also like to take two late days for this assignment... 
+
+We have adhered to the honor code in this assignment.

@@ -1,0 +1,31 @@
+ 1. egrep -c "[^aeiou]*[aeiou]]{1}[^aeiou]*$" words.241
+ 2. egrep -c ".*a.*e.*i.*o.*u.*"
+ 3. egrep -c "^[a-z]{22}$" words.241
+ 4. egrep -c "\b\w*(\w{4})\w*\1" words.241
+ 5. egrep -c "^(\b...)[a-z]*\1\b$" words.241
+ 6. egrep -c "^([^aeiou][aeiou])+{3}*+$" words.241 | egrep -c "^[^A-Z]"
+ 7. egrep -c "^(.)(.)(.)[a-z]*\3\2\1$" words.241
+ 8. sed -E "s/wind chill|snow fall/summertime/g"
+ 9. sed -E '1,/computer/d;/^science$/,$d' words.241
+10. sed -E "s/\s([Tt])eh\s/ \1he /g" 
+11. input="the fat taco cat"; last=$(echo $input | sed -E 's/^.* ([^ ][^ ]*)/\1/g'); echo -n $last ''; echo $input | sed -E "s/$last//g" # I am really sorry
+12. sed -E -n 's/.*(\b\S+)\s.*\b\1.*$/\1/p'
+13. sed -E "s/^\/\*(.*)\*\//\/\/\1/g" 
+14. sed -E -n 's/cs 241/CSCI 241/p' 
+15. sed -E -n 's/cs(ci)?[ ]?241/CSCI 241/Ip' 
+16. sed -E 's/(.{20}).*/\1/g' 
+17. sed -E 's/T(h)?om(as)? (B. )?Wexler/T-Wex/g'
+18. sed -E 's/([A-Z])[a-z]+ ([A-Z])[a-z]+/\1\2/g'
+19. sed -E 's/\b([0-9]{3})([0-9]{3})([0-9]{4})\b/(\1) \2-\3/g'
+20. wget -q -O- xkcd.com | sed -E -n 's/.*embedding\): (.*)/Image: \1/p; s/<title>xkcd: (.*)</title>/Title: \1/p'
+
+EXTRA CREDIT:
+ 1. sed -E '/^(\s*)?#.*/d'
+ 2. Too burnt out to do the rest
+ 3. 
+ 4. level 1: 'foo'
+
+ Name: Adam Cooper
+ I affirm that I have adhered to the honor code in this assignment
+
+

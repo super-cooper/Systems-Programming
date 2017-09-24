@@ -1,0 +1,21 @@
+1. Adam Cooper and Helen Stern
+2. encode.c encodes a file with Huffman compression
+   decode.c decodes a file that has bee Huffman compressed
+3. encode.c see above
+   decode.c see above
+   hashtable.c rudimentary implementation of a hashtable
+   hashtable.h all the functions in hashtable.c
+   Makefile makefile with targets all, decode, encode, and clean
+   encode.1 man page for encode
+   decode.1 man page for decode
+4. encode has an 8byte memory leak associated with the creation of char *new. 
+These allocations are all freed in the function ht_clear() in hashtable.c, and new is 
+created multiple times at size 8 bytes, yet only one instance of it is not freed for some
+unknown reason. There are also many warnings about conditional jumps being dependent on
+uninitialized variables, when the variables are, in fact, definitely initialized. There is
+also a segfault issue with reading binary data for some reason, which appears to a problem
+with the read function. We're not sure why this occurs.
+5. Forever + 1
+6. We encode and decode the characters from left to right, so we don't need to know where
+EOF is, and we can easily and simply do everything in order.
+7. See part 4.

@@ -1,0 +1,24 @@
+.\"
+    Man page for Huffman Tree encoding program "encode"
+
+.TH encode_man 1 "30 April 2017" "CSCI 241" "Oberlin College"
+
+.SH NAME
+.B encode <file>
+\- encodes a file using Huffman Tree compression
+
+.SH SYNOPSIS
+.B ./encode
+
+.SH DESCRIPTION
+Builds a Huffman Tree of a given file and then compresses it down to short bit paths and then stores it in a new file, file.huff
+
+.SH OPTIONS
+.IP "<file>"
+The file to compress; will use stdin if no file is provided
+
+.SH AUTHORS
+Adam Cooper and Helen Stern
+
+.SH BUGS
+Will segfault if given binary data due to apparent problem with read function

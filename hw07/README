@@ -1,0 +1,6 @@
+Names: Helen Stern and Adam Cooper
+Files: 
+       additup.c: capable of adding together arbitrarily large positive integers
+Bugs: None holy crap lmao
+Time: Not too much maybe 8 hours with three of them spent doing nothing
+Design: We were able to cut down on a lot of lines of code by using fgets to read input and compressing a few conditional statements into one line as well

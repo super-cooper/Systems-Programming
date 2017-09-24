@@ -1,0 +1,9 @@
+1.Adam Cooper n Helen stern - sorts strings by ascii values, folded case, or leading digits
+2. sort.c - C source code for sort
+   Makefile - a Makefile
+   sort.1 - man page for sort
+   README - this
+3. The -n flag doesn't quite work. It is able to cleanly store the leading digit and the characters after it, but it can't read the leading digit from the struct in the compare function likely due to casting issues. So, the leading digit it's supposed to be reading when comparing is actually just garbage nonsense data
+4. We were really ahead of schedule and then it just all fell apart. We finished most of it in about two sessions and then here we are.
+5. We have adhered to the honor code in this assignment.
+
